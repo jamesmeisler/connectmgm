@@ -6,4 +6,5 @@ before_script:
   - composer install --no-interaction
 
 script:
+- cp .env.travis .env
 - vendor/bin/phpunit
