@@ -7,16 +7,13 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-Vue.component('example', require('./components/Example.vue'));
+Vue.component('page-header', require('./components/page-header.vue'));
+Vue.component('breadcrumbs', require('./components/breadcrumbs.vue'));
+Vue.component('jobs-page', require('./components/jobs-page.vue'));
 
 const app = new Vue({
-    el: '#app'
+  el: '#app'
 });
+
+
+

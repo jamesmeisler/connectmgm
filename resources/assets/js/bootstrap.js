@@ -1,5 +1,6 @@
 
 window._ = require('lodash');
+window.Vue = require('vue');
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -8,8 +9,6 @@ window._ = require('lodash');
  */
 
 try {
-    window.$ = window.jQuery = require('jquery');
-
     require('bootstrap-sass');
 } catch (e) {}
 

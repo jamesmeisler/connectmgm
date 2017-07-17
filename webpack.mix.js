@@ -11,5 +11,9 @@ let mix = require('laravel-mix');
  |
  */
 
+mix.copyDirectory('resources/unify/', 'public/assets');
+mix.copyDirectory('resources/img/', 'public/img');
+
+
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
